@@ -4,4 +4,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-DOMAIN-HERE/sitemap.xml
+Sitemap: https://davenport-books.netlify.app/sitemap.xml
