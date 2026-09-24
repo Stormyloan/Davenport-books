@@ -1,0 +1,7 @@
+# Davenport Books — robots.txt
+# Replace YOUR-DOMAIN-HERE with your live web address before publishing.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://YOUR-DOMAIN-HERE/sitemap.xml
