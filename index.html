@@ -1,898 +1,1448 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- =====================================================================
+        <!-- =====================================================================
        SEO + SHARING (EDIT ME)
        ===================================================================== -->
-  <title>Davenport Books | Publishing and Book Marketing Services for Authors</title>
-  <meta name="description" content="Davenport Books helps authors publish, present, market, and launch their books, from KDP publishing and formatting to cover design, ads, and launch campaigns.">
-  <meta name="theme-color" content="#1e1e1e">
+        <title>
+            Davenport Books | Publishing and Book Marketing Services for Authors
+        </title>
+        <meta
+            name="description"
+            content="Davenport Books helps authors publish, present, market, and launch their books, from KDP publishing and formatting to cover design, ads, and launch campaigns."
+        />
+        <meta name="theme-color" content="#1e1e1e" />
 
-  <!-- Open Graph (placeholder values: update when the site has a real address) -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Davenport Books">
-  <meta property="og:title" content="Davenport Books | Publishing and Book Marketing Services for Authors">
-  <meta property="og:description" content="Publishing and marketing support for authors, from manuscript to launch.">
-  <!-- Add these two lines once you have a live web address and a share image (about 1200x630px):
-  <meta property="og:url" content="https://YOUR-DOMAIN-HERE/">
-  <meta property="og:image" content="https://YOUR-DOMAIN-HERE/assets/images/og-image.jpg">
-  -->
+        <!-- Open Graph (placeholder values: update when the site has a real address) -->
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Davenport Books" />
+        <meta
+            property="og:title"
+            content="Davenport Books | Publishing and Book Marketing Services for Authors"
+        />
+        <meta
+            property="og:description"
+            content="Publishing and marketing support for authors, from manuscript to launch."
+        />
+        <!-- Add these two lines once you have a live web address and a share image (about 1200x630px):-->
+        <meta property="og:url" content="https://davenport-books.netlify.app" />
+        <meta
+            property="og:image"
+            content="https://davenport-books.netlify.app/assets/images/Davenport-Books-OG-Image.jpg"
+        />
+        -->
 
-  <!-- Favicon placeholder: replace assets/icons/favicon.svg with your own icon -->
-  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+        <!-- Favicon placeholder: replace assets/icons/favicon.svg with your own icon -->
+        <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
 
-  <!-- Tiny script: tells the CSS that JavaScript is available. -->
-  <script>document.documentElement.classList.add("js");</script>
+        <!-- Tiny script: tells the CSS that JavaScript is available. -->
+        <script>
+            document.documentElement.classList.add("js");
+        </script>
 
-  <link rel="stylesheet" href="css/style.css">
-</head>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-<body>
-  <!-- Accessibility: lets keyboard users jump straight past the menu -->
-  <a class="skip-link" href="#main">Skip to main content</a>
+    <body>
+        <!-- Accessibility: lets keyboard users jump straight past the menu -->
+        <a class="skip-link" href="#main">Skip to main content</a>
 
-  <!-- =====================================================================
+        <!-- =====================================================================
        1. NAVIGATION
        ===================================================================== -->
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-
-      <!-- OFFICIAL LOGO.
+        <header class="site-header" id="top">
+            <div class="container header-inner">
+                <!-- OFFICIAL LOGO.
            If your file is named differently (e.g. Davenport_Books_Logo.svg),
            change the src below and in the footer. -->
-      <a class="brand" href="#home" aria-label="Davenport Books, back to top">
-        <img src="assets/logos/davenport-books-logo.svg"
-             alt="Davenport Books"
-             class="brand-logo">
-      </a>
+                <a
+                    class="brand"
+                    href="#home"
+                    aria-label="Davenport Books, back to top"
+                >
+                    <img
+                        src="assets/logos/davenport-books-logo.svg"
+                        alt="Davenport Books"
+                        class="brand-logo"
+                    />
+                </a>
 
-      <!-- Mobile menu button (only visible on small screens; see js/script.js) -->
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
+                <!-- Mobile menu button (only visible on small screens; see js/script.js) -->
+                <button
+                    class="nav-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="site-nav"
+                    aria-label="Open menu"
+                >
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
 
-      <nav class="site-nav" id="site-nav" aria-label="Main">
-        <ul class="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <a class="btn btn-primary nav-cta" href="#contact">Work With Us</a>
-      </nav>
-    </div>
-  </header>
+                <nav class="site-nav" id="site-nav" aria-label="Main">
+                    <ul class="nav-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <a class="btn btn-primary nav-cta" href="#contact"
+                        >Work With Us</a
+                    >
+                </nav>
+            </div>
+        </header>
 
-  <main id="main">
-
-    <!-- =====================================================================
+        <main id="main">
+            <!-- =====================================================================
          2. HERO
          ===================================================================== -->
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="container hero-grid">
+            <section class="hero" id="home" aria-labelledby="hero-title">
+                <div class="container hero-grid">
+                    <div class="hero-copy">
+                        <h1 id="hero-title">Bring Your Book to the World.</h1>
+                        <p class="hero-lead">
+                            Davenport Books helps authors move from manuscript
+                            to publication, presentation, marketing, and launch,
+                            with publishing and marketing support in one place.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary" href="#services"
+                                >Explore Services</a
+                            >
+                            <a class="btn btn-secondary" href="#contact"
+                                >Work With Us</a
+                            >
+                        </div>
+                        <p class="hero-note">A Davenport Labs company.</p>
+                    </div>
 
-        <div class="hero-copy">
-          <h1 id="hero-title">Bring Your Book to the World.</h1>
-          <p class="hero-lead">
-            Davenport Books helps authors move from manuscript to publication,
-            presentation, marketing, and launch, with publishing and marketing
-            support in one place.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#services">Explore Services</a>
-            <a class="btn btn-secondary" href="#contact">Work With Us</a>
-          </div>
-          <p class="hero-note">A Davenport Labs company.</p>
-        </div>
-
-        <!-- HERO ARTWORK PLACEHOLDER.
+                    <!-- HERO ARTWORK PLACEHOLDER.
              To use your own artwork (logo, book mockup, cover, illustration):
              1. Save the image in assets/images/ (for example hero-book.png).
              2. Delete the <div class="hero-visual-frame"> block below.
              3. In its place, paste:
                 <img class="hero-visual-img" src="assets/images/hero-book.png" alt="Describe the image here"> -->
-        <div class="hero-visual">
-          <div class="hero-visual-frame">
-            <span class="badge">Placeholder</span>
-            <p class="hero-visual-title">Your logo, book mockup, or artwork goes here</p>
-            <p class="hero-visual-hint">See the comment above this block in index.html</p>
-          </div>
-        </div>
+                    <div class="hero-visual">
+                        <div class="hero-visual-frame">
+                            <span class="badge">Placeholder</span>
+                            <p class="hero-visual-title">
+                                Your logo, book mockup, or artwork goes here
+                            </p>
+                            <p class="hero-visual-hint">
+                                See the comment above this block in index.html
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      </div>
-    </section>
-
-
-    <!-- =====================================================================
+            <!-- =====================================================================
          3. SERVICES
          ===================================================================== -->
-    <section class="section section--white" id="services" aria-labelledby="services-title">
-      <div class="container">
+            <section
+                class="section section--white"
+                id="services"
+                aria-labelledby="services-title"
+            >
+                <div class="container">
+                    <div class="section-head reveal">
+                        <h2 id="services-title">
+                            Services for authors, from first draft to launch day
+                        </h2>
+                        <p>
+                            Choose a single service or combine several. Each one
+                            is available on its own or as part of a bigger plan.
+                        </p>
+                    </div>
 
-        <div class="section-head reveal">
-          <h2 id="services-title">Services for authors, from first draft to launch day</h2>
-          <p>
-            Choose a single service or combine several. Each one is available
-            on its own or as part of a bigger plan.
-          </p>
-        </div>
+                    <!-- ---------- Group A: Publishing & Book Services ---------- -->
+                    <div class="service-group reveal" id="publishing-services">
+                        <h3 class="group-title">
+                            Publishing &amp; Book Services
+                        </h3>
 
-        <!-- ---------- Group A: Publishing & Book Services ---------- -->
-        <div class="service-group reveal" id="publishing-services">
-          <h3 class="group-title">Publishing &amp; Book Services</h3>
+                        <div class="service-grid service-grid--3">
+                            <!-- SERVICE: KDP Publishing Assistance -->
+                            <article class="service-card">
+                                <div class="service-icon" aria-hidden="true">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        focusable="false"
+                                    >
+                                        <path
+                                            d="M12 16V4m0 0L8 8m4-4 4 4M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"
+                                        />
+                                    </svg>
+                                </div>
+                                <h4 class="service-title">
+                                    KDP Publishing Assistance
+                                </h4>
+                                <p class="service-text">
+                                    Guidance and hands-on help preparing your
+                                    book and listing details for Amazon Kindle
+                                    Direct Publishing.
+                                </p>
+                                <p class="service-price">Pricing: on request</p>
+                                <a
+                                    class="service-link"
+                                    href="#contact"
+                                    data-service="KDP Publishing Assistance"
+                                    >Ask about KDP publishing</a
+                                >
+                            </article>
 
-          <div class="service-grid service-grid--3">
+                            <!-- SERVICE: Book Formatting -->
+                            <article class="service-card">
+                                <div class="service-icon" aria-hidden="true">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        focusable="false"
+                                    >
+                                        <path
+                                            d="M4 6h16M4 10h10M4 14h16M4 18h10"
+                                        />
+                                    </svg>
+                                </div>
+                                <h4 class="service-title">Book Formatting</h4>
+                                <p class="service-text">
+                                    Clean, consistent interior layouts for print
+                                    and digital editions, so your pages read
+                                    well on every format.
+                                </p>
+                                <p class="service-price">Pricing: on request</p>
+                                <a
+                                    class="service-link"
+                                    href="#contact"
+                                    data-service="Book Formatting"
+                                    >Ask about formatting</a
+                                >
+                            </article>
 
-            <!-- SERVICE: KDP Publishing Assistance -->
-            <article class="service-card">
-              <div class="service-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 16V4m0 0L8 8m4-4 4 4M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg>
-              </div>
-              <h4 class="service-title">KDP Publishing Assistance</h4>
-              <p class="service-text">Guidance and hands-on help preparing your book and listing details for Amazon Kindle Direct Publishing.</p>
-              <p class="service-price">Pricing: on request</p>
-              <a class="service-link" href="#contact" data-service="KDP Publishing Assistance">Ask about KDP publishing</a>
-            </article>
+                            <!-- SERVICE: Book Cover Design -->
+                            <article class="service-card">
+                                <div class="service-icon" aria-hidden="true">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        focusable="false"
+                                    >
+                                        <rect
+                                            x="6"
+                                            y="3"
+                                            width="13"
+                                            height="18"
+                                            rx="1.5"
+                                        />
+                                        <path d="M10 3v18" />
+                                    </svg>
+                                </div>
+                                <h4 class="service-title">Book Cover Design</h4>
+                                <p class="service-text">
+                                    Cover concepts that suit your genre and
+                                    audience, prepared in the sizes your
+                                    publishing platform needs.
+                                </p>
+                                <p class="service-price">Pricing: on request</p>
+                                <a
+                                    class="service-link"
+                                    href="#contact"
+                                    data-service="Book Cover Design"
+                                    >Ask about cover design</a
+                                >
+                            </article>
 
-            <!-- SERVICE: Book Formatting -->
-            <article class="service-card">
-              <div class="service-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 6h16M4 10h10M4 14h16M4 18h10"/></svg>
-              </div>
-              <h4 class="service-title">Book Formatting</h4>
-              <p class="service-text">Clean, consistent interior layouts for print and digital editions, so your pages read well on every format.</p>
-              <p class="service-price">Pricing: on request</p>
-              <a class="service-link" href="#contact" data-service="Book Formatting">Ask about formatting</a>
-            </article>
+                            <!-- SERVICE: Amazon Book Optimization -->
+                            <article class="service-card">
+                                <div class="service-icon" aria-hidden="true">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        focusable="false"
+                                    >
+                                        <circle cx="11" cy="11" r="6" />
+                                        <path d="m20 20-4.2-4.2" />
+                                    </svg>
+                                </div>
+                                <h4 class="service-title">
+                                    Amazon Book Optimization
+                                </h4>
+                                <p class="service-text">
+                                    Review and improve your title, description,
+                                    keywords, and categories so your book page
+                                    is clear and easy to find.
+                                </p>
+                                <p class="service-price">Pricing: on request</p>
+                                <a
+                                    class="service-link"
+                                    href="#contact"
+                                    data-service="Amazon Book Optimization"
+                                    >Ask about Amazon optimization</a
+                                >
+                            </article>
 
-            <!-- SERVICE: Book Cover Design -->
-            <article class="service-card">
-              <div class="service-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="6" y="3" width="13" height="18" rx="1.5"/><path d="M10 3v18"/></svg>
-              </div>
-              <h4 class="service-title">Book Cover Design</h4>
-              <p class="service-text">Cover concepts that suit your genre and audience, prepared in the sizes your publishing platform needs.</p>
-              <p class="service-price">Pricing: on request</p>
-              <a class="service-link" href="#contact" data-service="Book Cover Design">Ask about cover design</a>
-            </article>
+                            <!-- SERVICE: Goodreads Optimization -->
+                            <article class="service-card">
+                                <div class="service-icon" aria-hidden="true">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        focusable="false"
+                                    >
+                                        <path
+                                            d="m12 3 2.6 5.6 6.1.7-4.5 4.1 1.3 6.1-5.5-3.1-5.5 3.1 1.3-6.1-4.5-4.1 6.1-.7z"
+                                        />
+                                    </svg>
+                                </div>
+                                <h4 class="service-title">
+                                    Goodreads Optimization
+                                </h4>
+                                <p class="service-text">
+                                    Set up and polish your author profile and
+                                    book pages so readers can discover and learn
+                                    about your work.
+                                </p>
+                                <p class="service-price">Pricing: on request</p>
+                                <a
+                                    class="service-link"
+                                    href="#contact"
+                                    data-service="Goodreads Optimization"
+                                    >Ask about Goodreads</a
+                                >
+                            </article>
 
-            <!-- SERVICE: Amazon Book Optimization -->
-            <article class="service-card">
-              <div class="service-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.2-4.2"/></svg>
-              </div>
-              <h4 class="service-title">Amazon Book Optimization</h4>
-              <p class="service-text">Review and improve your title, description, keywords, and categories so your book page is clear and easy to find.</p>
-              <p class="service-price">Pricing: on request</p>
-              <a class="service-link" href="#contact" data-service="Amazon Book Optimization">Ask about Amazon optimization</a>
-            </article>
+                            <!-- "Not sure?" tile -->
+                            <article class="service-card service-card--cta">
+                                <h4 class="service-title">
+                                    Not sure where to start?
+                                </h4>
+                                <p class="service-text">
+                                    Tell us about your book and where you are in
+                                    the process, and we'll suggest which
+                                    services make sense first.
+                                </p>
+                                <a
+                                    class="btn btn-primary"
+                                    href="#contact"
+                                    data-service="Not sure yet"
+                                    >Start a conversation</a
+                                >
+                            </article>
+                        </div>
+                    </div>
 
-            <!-- SERVICE: Goodreads Optimization -->
-            <article class="service-card">
-              <div class="service-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m12 3 2.6 5.6 6.1.7-4.5 4.1 1.3 6.1-5.5-3.1-5.5 3.1 1.3-6.1-4.5-4.1 6.1-.7z"/></svg>
-              </div>
-              <h4 class="service-title">Goodreads Optimization</h4>
-              <p class="service-text">Set up and polish your author profile and book pages so readers can discover and learn about your work.</p>
-              <p class="service-price">Pricing: on request</p>
-              <a class="service-link" href="#contact" data-service="Goodreads Optimization">Ask about Goodreads</a>
-            </article>
+                    <!-- ---------- Group B: Marketing & Growth ---------- -->
+                    <div class="service-group reveal" id="marketing-services">
+                        <h3 class="group-title">Marketing &amp; Growth</h3>
 
-            <!-- "Not sure?" tile -->
-            <article class="service-card service-card--cta">
-              <h4 class="service-title">Not sure where to start?</h4>
-              <p class="service-text">Tell us about your book and where you are in the process, and we'll suggest which services make sense first.</p>
-              <a class="btn btn-primary" href="#contact" data-service="Not sure yet">Start a conversation</a>
-            </article>
+                        <div class="service-grid service-grid--4">
+                            <!-- SERVICE: Ads Management -->
+                            <article class="service-card">
+                                <div class="service-icon" aria-hidden="true">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        focusable="false"
+                                    >
+                                        <path d="M5 20v-8m7 8V5m7 15v-9" />
+                                    </svg>
+                                </div>
+                                <h4 class="service-title">Ads Management</h4>
+                                <p class="service-text">
+                                    Plan, set up, and monitor book ads, with
+                                    regular adjustments based on how your
+                                    campaigns perform.
+                                </p>
+                                <p class="service-price">Pricing: on request</p>
+                                <a
+                                    class="service-link"
+                                    href="#contact"
+                                    data-service="Ads Management"
+                                    >Ask about ads</a
+                                >
+                            </article>
 
-          </div>
-        </div>
+                            <!-- SERVICE: Social Media Marketing -->
+                            <article class="service-card">
+                                <div class="service-icon" aria-hidden="true">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        focusable="false"
+                                    >
+                                        <path d="M4 5h16v11H9l-5 4z" />
+                                    </svg>
+                                </div>
+                                <h4 class="service-title">
+                                    Social Media Marketing
+                                </h4>
+                                <p class="service-text">
+                                    Content ideas and designed posts that
+                                    present your book and your author brand
+                                    consistently.
+                                </p>
+                                <p class="service-price">Pricing: on request</p>
+                                <a
+                                    class="service-link"
+                                    href="#contact"
+                                    data-service="Social Media Marketing"
+                                    >Ask about social media</a
+                                >
+                            </article>
 
-        <!-- ---------- Group B: Marketing & Growth ---------- -->
-        <div class="service-group reveal" id="marketing-services">
-          <h3 class="group-title">Marketing &amp; Growth</h3>
+                            <!-- SERVICE: Author Email Marketing -->
+                            <article class="service-card">
+                                <div class="service-icon" aria-hidden="true">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        focusable="false"
+                                    >
+                                        <rect
+                                            x="3"
+                                            y="5"
+                                            width="18"
+                                            height="14"
+                                            rx="2"
+                                        />
+                                        <path d="m3 7 9 6 9-6" />
+                                    </svg>
+                                </div>
+                                <h4 class="service-title">
+                                    Author Email Marketing
+                                </h4>
+                                <p class="service-text">
+                                    Build and write for your own reader list
+                                    with welcome messages, newsletters, and
+                                    launch announcements.
+                                </p>
+                                <p class="service-price">Pricing: on request</p>
+                                <a
+                                    class="service-link"
+                                    href="#contact"
+                                    data-service="Author Email Marketing"
+                                    >Ask about email marketing</a
+                                >
+                            </article>
 
-          <div class="service-grid service-grid--4">
+                            <!-- SERVICE: Book Launch Campaign Management -->
+                            <article class="service-card">
+                                <div class="service-icon" aria-hidden="true">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        focusable="false"
+                                    >
+                                        <path d="M6 21V4m0 0h11l-2 4 2 4H6" />
+                                    </svg>
+                                </div>
+                                <h4 class="service-title">
+                                    Book Launch Campaign Management
+                                </h4>
+                                <p class="service-text">
+                                    Coordinate the timeline, materials, and
+                                    promotion around your release so everything
+                                    lands together.
+                                </p>
+                                <p class="service-price">Pricing: on request</p>
+                                <a
+                                    class="service-link"
+                                    href="#contact"
+                                    data-service="Book Launch Campaign Management"
+                                    >Ask about launch campaigns</a
+                                >
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <!-- SERVICE: Ads Management -->
-            <article class="service-card">
-              <div class="service-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 20v-8m7 8V5m7 15v-9"/></svg>
-              </div>
-              <h4 class="service-title">Ads Management</h4>
-              <p class="service-text">Plan, set up, and monitor book ads, with regular adjustments based on how your campaigns perform.</p>
-              <p class="service-price">Pricing: on request</p>
-              <a class="service-link" href="#contact" data-service="Ads Management">Ask about ads</a>
-            </article>
-
-            <!-- SERVICE: Social Media Marketing -->
-            <article class="service-card">
-              <div class="service-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M4 5h16v11H9l-5 4z"/></svg>
-              </div>
-              <h4 class="service-title">Social Media Marketing</h4>
-              <p class="service-text">Content ideas and designed posts that present your book and your author brand consistently.</p>
-              <p class="service-price">Pricing: on request</p>
-              <a class="service-link" href="#contact" data-service="Social Media Marketing">Ask about social media</a>
-            </article>
-
-            <!-- SERVICE: Author Email Marketing -->
-            <article class="service-card">
-              <div class="service-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-              </div>
-              <h4 class="service-title">Author Email Marketing</h4>
-              <p class="service-text">Build and write for your own reader list with welcome messages, newsletters, and launch announcements.</p>
-              <p class="service-price">Pricing: on request</p>
-              <a class="service-link" href="#contact" data-service="Author Email Marketing">Ask about email marketing</a>
-            </article>
-
-            <!-- SERVICE: Book Launch Campaign Management -->
-            <article class="service-card">
-              <div class="service-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M6 21V4m0 0h11l-2 4 2 4H6"/></svg>
-              </div>
-              <h4 class="service-title">Book Launch Campaign Management</h4>
-              <p class="service-text">Coordinate the timeline, materials, and promotion around your release so everything lands together.</p>
-              <p class="service-price">Pricing: on request</p>
-              <a class="service-link" href="#contact" data-service="Book Launch Campaign Management">Ask about launch campaigns</a>
-            </article>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- =====================================================================
+            <!-- =====================================================================
          4. WHY DAVENPORT BOOKS
          ===================================================================== -->
-    <section class="section" id="why" aria-labelledby="why-title">
-      <div class="container why-grid">
+            <section class="section" id="why" aria-labelledby="why-title">
+                <div class="container why-grid">
+                    <div class="section-head reveal">
+                        <h2 id="why-title">Why work with Davenport Books</h2>
+                        <p>
+                            Publishing a book and telling readers about it are
+                            two big jobs. We help with both, in a way that stays
+                            organized and easy to follow.
+                        </p>
+                    </div>
 
-        <div class="section-head reveal">
-          <h2 id="why-title">Why work with Davenport Books</h2>
-          <p>
-            Publishing a book and telling readers about it are two big jobs.
-            We help with both, in a way that stays organized and easy to follow.
-          </p>
-        </div>
+                    <ul class="why-list reveal">
+                        <li class="why-item">
+                            <h3>
+                                One place for publishing and marketing support
+                            </h3>
+                            <p>
+                                Formatting, covers, listings, ads, and launch
+                                planning can be handled together, so you don't
+                                have to coordinate a different provider for
+                                every step.
+                            </p>
+                        </li>
+                        <li class="why-item">
+                            <h3>Professional presentation</h3>
+                            <p>
+                                Your book, your listings, and your promotional
+                                materials are prepared to look consistent and
+                                credible to readers.
+                            </p>
+                        </li>
+                        <li class="why-item">
+                            <h3>An author-focused approach</h3>
+                            <p>
+                                We start with your book, your audience, and your
+                                goals, then suggest the services that fit them.
+                            </p>
+                        </li>
+                        <li class="why-item">
+                            <h3>A clear, organized process</h3>
+                            <p>
+                                You'll know what stage your project is in, what
+                                happens next, and what we need from you.
+                            </p>
+                        </li>
+                        <li class="why-item">
+                            <h3>Flexible services that grow with you</h3>
+                            <p>
+                                Start with one service, such as formatting, and
+                                add marketing support later as your needs
+                                change.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-        <ul class="why-list reveal">
-          <li class="why-item">
-            <h3>One place for publishing and marketing support</h3>
-            <p>Formatting, covers, listings, ads, and launch planning can be handled together, so you don't have to coordinate a different provider for every step.</p>
-          </li>
-          <li class="why-item">
-            <h3>Professional presentation</h3>
-            <p>Your book, your listings, and your promotional materials are prepared to look consistent and credible to readers.</p>
-          </li>
-          <li class="why-item">
-            <h3>An author-focused approach</h3>
-            <p>We start with your book, your audience, and your goals, then suggest the services that fit them.</p>
-          </li>
-          <li class="why-item">
-            <h3>A clear, organized process</h3>
-            <p>You'll know what stage your project is in, what happens next, and what we need from you.</p>
-          </li>
-          <li class="why-item">
-            <h3>Flexible services that grow with you</h3>
-            <p>Start with one service, such as formatting, and add marketing support later as your needs change.</p>
-          </li>
-        </ul>
-
-      </div>
-    </section>
-
-
-    <!-- =====================================================================
+            <!-- =====================================================================
          5. PROCESS (4 steps, on a dark charcoal band)
          ===================================================================== -->
-    <section class="section section--dark" id="process" aria-labelledby="process-title">
-      <div class="container">
+            <section
+                class="section section--dark"
+                id="process"
+                aria-labelledby="process-title"
+            >
+                <div class="container">
+                    <div class="section-head reveal">
+                        <h2 id="process-title">How it works</h2>
+                        <p>
+                            Four simple steps from first conversation to ongoing
+                            improvement.
+                        </p>
+                    </div>
 
-        <div class="section-head reveal">
-          <h2 id="process-title">How it works</h2>
-          <p>Four simple steps from first conversation to ongoing improvement.</p>
-        </div>
+                    <ol class="process-steps reveal">
+                        <li class="process-step">
+                            <span class="step-number" aria-hidden="true"
+                                >01</span
+                            >
+                            <h3>Discover</h3>
+                            <p>
+                                Understand the author's book, goals, audience,
+                                and needs.
+                            </p>
+                        </li>
+                        <li class="process-step">
+                            <span class="step-number" aria-hidden="true"
+                                >02</span
+                            >
+                            <h3>Prepare</h3>
+                            <p>
+                                Prepare the book, materials, listings, branding,
+                                and marketing assets.
+                            </p>
+                        </li>
+                        <li class="process-step">
+                            <span class="step-number" aria-hidden="true"
+                                >03</span
+                            >
+                            <h3>Launch</h3>
+                            <p>
+                                Coordinate the publishing and promotional
+                                activities.
+                            </p>
+                        </li>
+                        <li class="process-step">
+                            <span class="step-number" aria-hidden="true"
+                                >04</span
+                            >
+                            <h3>Grow</h3>
+                            <p>
+                                Review results and continue improving the
+                                author's presence and marketing.
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </section>
 
-        <ol class="process-steps reveal">
-          <li class="process-step">
-            <span class="step-number" aria-hidden="true">01</span>
-            <h3>Discover</h3>
-            <p>Understand the author's book, goals, audience, and needs.</p>
-          </li>
-          <li class="process-step">
-            <span class="step-number" aria-hidden="true">02</span>
-            <h3>Prepare</h3>
-            <p>Prepare the book, materials, listings, branding, and marketing assets.</p>
-          </li>
-          <li class="process-step">
-            <span class="step-number" aria-hidden="true">03</span>
-            <h3>Launch</h3>
-            <p>Coordinate the publishing and promotional activities.</p>
-          </li>
-          <li class="process-step">
-            <span class="step-number" aria-hidden="true">04</span>
-            <h3>Grow</h3>
-            <p>Review results and continue improving the author's presence and marketing.</p>
-          </li>
-        </ol>
-
-      </div>
-    </section>
-
-
-    <!-- =====================================================================
+            <!-- =====================================================================
          6. ABOUT
          ===================================================================== -->
-    <section class="section section--white" id="about" aria-labelledby="about-title">
-      <div class="container about-grid">
+            <section
+                class="section section--white"
+                id="about"
+                aria-labelledby="about-title"
+            >
+                <div class="container about-grid">
+                    <div class="about-copy reveal">
+                        <h2 id="about-title">About Davenport Books</h2>
 
-        <div class="about-copy reveal">
-          <h2 id="about-title">About Davenport Books</h2>
+                        <!-- EDIT: replace the paragraphs below with your company story -->
+                        <p>
+                            Davenport Books is the publishing and book-marketing
+                            division of Davenport Labs. It exists to help
+                            authors and independent publishers present their
+                            books well and reach the readers they wrote them
+                            for.
+                        </p>
+                        <p>
+                            Davenport Labs works under a simple idea:
+                            <em>We Do Things.</em>
+                            Davenport Books applies that idea to publishing,
+                            from preparing a manuscript to planning a launch.
+                        </p>
+                        <p>
+                            <!-- EDIT: add a sentence or two about who you are and why you started this. -->
+                            Founder and company information will go here.
+                        </p>
+                    </div>
 
-          <!-- EDIT: replace the paragraphs below with your company story -->
-          <p>
-            Davenport Books is the publishing and book-marketing division of
-            Davenport Labs. It exists to help authors and independent publishers
-            present their books well and reach the readers they wrote them for.
-          </p>
-          <p>
-            Davenport Labs works under a simple idea: <em>We Do Things.</em>
-            Davenport Books applies that idea to publishing, from preparing a
-            manuscript to planning a launch.
-          </p>
-          <p>
-            <!-- EDIT: add a sentence or two about who you are and why you started this. -->
-            Founder and company information will go here.
-          </p>
-        </div>
-
-        <div class="about-placeholders reveal">
-
-          <!-- LOGO PLACEHOLDERS.
+                    <div class="about-placeholders reveal">
+                        <!-- LOGO PLACEHOLDERS.
                To use a real logo: delete the two <p> tags inside the box and add
                <img src="assets/logos/davenport-books-logo.svg" alt="Davenport Books logo"> -->
-          <div class="placeholder-row">
-            <div class="placeholder-box">
-              <span class="badge">Placeholder</span>
-              <p class="placeholder-label">Davenport Books logo</p>
-              <p class="placeholder-hint">assets/logos/</p>
-            </div>
-            <div class="placeholder-box">
-              <span class="badge">Placeholder</span>
-              <p class="placeholder-label">Davenport Labs logo</p>
-              <p class="placeholder-hint">assets/logos/</p>
-            </div>
-          </div>
+                        <div class="placeholder-row">
+                            <div class="placeholder-box">
+                                <span class="badge">Placeholder</span>
+                                <p class="placeholder-label">
+                                    Davenport Books logo
+                                </p>
+                                <p class="placeholder-hint">assets/logos/</p>
+                            </div>
+                            <div class="placeholder-box">
+                                <span class="badge">Placeholder</span>
+                                <p class="placeholder-label">
+                                    Davenport Labs logo
+                                </p>
+                                <p class="placeholder-hint">assets/logos/</p>
+                            </div>
+                        </div>
 
-          <div class="placeholder-box placeholder-box--wide">
-            <span class="badge">Placeholder</span>
-            <p class="placeholder-label">Founder / company information</p>
-            <p class="placeholder-hint">Add a photo, name, and short bio when you're ready</p>
-          </div>
+                        <div class="placeholder-box placeholder-box--wide">
+                            <span class="badge">Placeholder</span>
+                            <p class="placeholder-label">
+                                Founder / company information
+                            </p>
+                            <p class="placeholder-hint">
+                                Add a photo, name, and short bio when you're
+                                ready
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- =====================================================================
+            <!-- =====================================================================
          6b. TEAM
          ===================================================================== -->
-    <section class="section section--tint" id="team" aria-labelledby="team-title">
-      <div class="container team-layout">
+            <section
+                class="section section--tint"
+                id="team"
+                aria-labelledby="team-title"
+            >
+                <div class="container team-layout">
+                    <div class="section-head reveal">
+                        <h2 id="team-title">Meet the team</h2>
+                        <p>The people behind Davenport Books.</p>
+                    </div>
 
-        <div class="section-head reveal">
-          <h2 id="team-title">Meet the team</h2>
-          <p>The people behind Davenport Books.</p>
-        </div>
-
-        <div class="team-grid reveal">
-
-          <!-- ===== TEAM MEMBER: copy from here ... -->
-          <article class="team-card">
-
-            <!-- PHOTO PLACEHOLDER.
+                    <div class="team-grid reveal">
+                        <!-- ===== TEAM MEMBER: copy from here ... -->
+                        <article class="team-card">
+                            <!-- PHOTO PLACEHOLDER.
                  To use a real photo:
                  1. Save it in assets/images/team/ (for example jeffrey-davenport.jpg).
                  2. Delete the <div class="team-photo-placeholder"> block below.
                  3. Add this in its place, inside <div class="team-photo">:
                     <img class="team-photo-img" src="assets/images/team/jeffrey-davenport.jpg" alt="Jeffrey Davenport"> -->
-            <div class="team-photo">
-              <div class="team-photo-placeholder">
-                <span class="badge">Placeholder</span>
-                <p class="team-photo-label">Photo</p>
-              </div>
-            </div>
+                            <div class="team-photo">
+                                <div class="team-photo-placeholder">
+                                    <span class="badge">Placeholder</span>
+                                    <p class="team-photo-label">Photo</p>
+                                </div>
+                            </div>
 
-            <div class="team-info">
-              <h3 class="team-name">Jeffrey Davenport</h3>
-              <p class="team-role">Founder / Director</p>
-              <p class="team-bio">[Bio coming soon]</p>
+                            <div class="team-info">
+                                <h3 class="team-name">Jeffrey Davenport</h3>
+                                <p class="team-role">Founder / Director</p>
+                                <p class="team-bio">[Bio coming soon]</p>
 
-              <!-- OPTIONAL LINKS: leave these out until you have real ones. -->
-            </div>
+                                <!-- OPTIONAL LINKS: leave these out until you have real ones. -->
+                            </div>
+                        </article>
+                        <!-- ... to here -->
+                    </div>
+                </div>
+            </section>
 
-          </article>
-          <!-- ... to here -->
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- =====================================================================
+            <!-- =====================================================================
          7. PORTFOLIO / WORK (all placeholders)
          ===================================================================== -->
-    <section class="section" id="work" aria-labelledby="work-title">
-      <div class="container">
+            <section class="section" id="work" aria-labelledby="work-title">
+                <div class="container">
+                    <div class="section-head reveal">
+                        <h2 id="work-title">Work</h2>
+                        <p>
+                            Project examples will appear here as they are
+                            completed. Everything below is a labeled
+                            placeholder, not real client work.
+                        </p>
+                    </div>
 
-        <div class="section-head reveal">
-          <h2 id="work-title">Work</h2>
-          <p>
-            Project examples will appear here as they are completed. Everything
-            below is a labeled placeholder, not real client work.
-          </p>
-        </div>
+                    <div class="work-grid reveal">
+                        <figure class="work-card">
+                            <div class="work-visual">
+                                <span class="badge">Placeholder</span>
+                                <p class="work-visual-label">
+                                    Book cover image
+                                </p>
+                            </div>
+                            <figcaption>
+                                <h3 class="work-title">Sample Project</h3>
+                                <p>Book cover design example goes here.</p>
+                            </figcaption>
+                        </figure>
 
-        <div class="work-grid reveal">
+                        <figure class="work-card">
+                            <div class="work-visual">
+                                <span class="badge">Placeholder</span>
+                                <p class="work-visual-label">
+                                    Amazon listing example
+                                </p>
+                            </div>
+                            <figcaption>
+                                <h3 class="work-title">Sample Project</h3>
+                                <p>Amazon optimization example goes here.</p>
+                            </figcaption>
+                        </figure>
 
-          <figure class="work-card">
-            <div class="work-visual">
-              <span class="badge">Placeholder</span>
-              <p class="work-visual-label">Book cover image</p>
-            </div>
-            <figcaption>
-              <h3 class="work-title">Sample Project</h3>
-              <p>Book cover design example goes here.</p>
-            </figcaption>
-          </figure>
+                        <figure class="work-card">
+                            <div class="work-visual">
+                                <span class="badge">Placeholder</span>
+                                <p class="work-visual-label">
+                                    Launch campaign example
+                                </p>
+                            </div>
+                            <figcaption>
+                                <h3 class="work-title">Concept Project</h3>
+                                <p>Launch campaign concept goes here.</p>
+                            </figcaption>
+                        </figure>
 
-          <figure class="work-card">
-            <div class="work-visual">
-              <span class="badge">Placeholder</span>
-              <p class="work-visual-label">Amazon listing example</p>
-            </div>
-            <figcaption>
-              <h3 class="work-title">Sample Project</h3>
-              <p>Amazon optimization example goes here.</p>
-            </figcaption>
-          </figure>
+                        <figure class="work-card">
+                            <div class="work-visual">
+                                <span class="badge">Placeholder</span>
+                                <p class="work-visual-label">
+                                    Social media designs
+                                </p>
+                            </div>
+                            <figcaption>
+                                <h3 class="work-title">Concept Project</h3>
+                                <p>Social media design set goes here.</p>
+                            </figcaption>
+                        </figure>
 
-          <figure class="work-card">
-            <div class="work-visual">
-              <span class="badge">Placeholder</span>
-              <p class="work-visual-label">Launch campaign example</p>
-            </div>
-            <figcaption>
-              <h3 class="work-title">Concept Project</h3>
-              <p>Launch campaign concept goes here.</p>
-            </figcaption>
-          </figure>
+                        <figure class="work-card">
+                            <div class="work-visual">
+                                <span class="badge">Placeholder</span>
+                                <p class="work-visual-label">Coming soon</p>
+                            </div>
+                            <figcaption>
+                                <h3 class="work-title">Coming Soon</h3>
+                                <p>Space for a future project.</p>
+                            </figcaption>
+                        </figure>
 
-          <figure class="work-card">
-            <div class="work-visual">
-              <span class="badge">Placeholder</span>
-              <p class="work-visual-label">Social media designs</p>
-            </div>
-            <figcaption>
-              <h3 class="work-title">Concept Project</h3>
-              <p>Social media design set goes here.</p>
-            </figcaption>
-          </figure>
+                        <figure class="work-card">
+                            <div class="work-visual">
+                                <span class="badge">Placeholder</span>
+                                <p class="work-visual-label">Coming soon</p>
+                            </div>
+                            <figcaption>
+                                <h3 class="work-title">Coming Soon</h3>
+                                <p>Space for a future project.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
 
-          <figure class="work-card">
-            <div class="work-visual">
-              <span class="badge">Placeholder</span>
-              <p class="work-visual-label">Coming soon</p>
-            </div>
-            <figcaption>
-              <h3 class="work-title">Coming Soon</h3>
-              <p>Space for a future project.</p>
-            </figcaption>
-          </figure>
-
-          <figure class="work-card">
-            <div class="work-visual">
-              <span class="badge">Placeholder</span>
-              <p class="work-visual-label">Coming soon</p>
-            </div>
-            <figcaption>
-              <h3 class="work-title">Coming Soon</h3>
-              <p>Space for a future project.</p>
-            </figcaption>
-          </figure>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- =====================================================================
+            <!-- =====================================================================
          8. TESTIMONIALS (placeholders only)
          ===================================================================== -->
-    <section class="section section--white" id="testimonials" aria-labelledby="testimonials-title">
-      <div class="container">
+            <section
+                class="section section--white"
+                id="testimonials"
+                aria-labelledby="testimonials-title"
+            >
+                <div class="container">
+                    <div class="section-head reveal">
+                        <h2 id="testimonials-title">What Authors Will Say</h2>
+                        <p class="notice">
+                            <strong>Placeholder content.</strong> These are not
+                            real testimonials. Replace them with real, approved
+                            quotes before publishing.
+                        </p>
+                    </div>
 
-        <div class="section-head reveal">
-          <h2 id="testimonials-title">What Authors Will Say</h2>
-          <p class="notice">
-            <strong>Placeholder content.</strong> These are not real testimonials.
-            Replace them with real, approved quotes before publishing.
-          </p>
-        </div>
+                    <div class="testimonial-grid reveal">
+                        <figure class="testimonial">
+                            <blockquote>
+                                <p>“Your experience could appear here.”</p>
+                            </blockquote>
+                            <figcaption>
+                                Author name, Book title
+                                <span class="badge">Placeholder</span>
+                            </figcaption>
+                        </figure>
 
-        <div class="testimonial-grid reveal">
+                        <figure class="testimonial">
+                            <blockquote>
+                                <p>
+                                    “A short comment about the publishing
+                                    process could appear here.”
+                                </p>
+                            </blockquote>
+                            <figcaption>
+                                Author name, Book title
+                                <span class="badge">Placeholder</span>
+                            </figcaption>
+                        </figure>
 
-          <figure class="testimonial">
-            <blockquote>
-              <p>“Your experience could appear here.”</p>
-            </blockquote>
-            <figcaption>
-              Author name, Book title
-              <span class="badge">Placeholder</span>
-            </figcaption>
-          </figure>
+                        <figure class="testimonial">
+                            <blockquote>
+                                <p>
+                                    “A short comment about the launch could
+                                    appear here.”
+                                </p>
+                            </blockquote>
+                            <figcaption>
+                                Author name, Book title
+                                <span class="badge">Placeholder</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
 
-          <figure class="testimonial">
-            <blockquote>
-              <p>“A short comment about the publishing process could appear here.”</p>
-            </blockquote>
-            <figcaption>
-              Author name, Book title
-              <span class="badge">Placeholder</span>
-            </figcaption>
-          </figure>
-
-          <figure class="testimonial">
-            <blockquote>
-              <p>“A short comment about the launch could appear here.”</p>
-            </blockquote>
-            <figcaption>
-              Author name, Book title
-              <span class="badge">Placeholder</span>
-            </figcaption>
-          </figure>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- =====================================================================
+            <!-- =====================================================================
          9. FAQ
          ===================================================================== -->
-    <section class="section" id="faq" aria-labelledby="faq-title">
-      <div class="container faq-grid">
+            <section class="section" id="faq" aria-labelledby="faq-title">
+                <div class="container faq-grid">
+                    <div class="section-head reveal">
+                        <h2 id="faq-title">Frequently asked questions</h2>
+                        <p>
+                            Don't see your question? Send it through the
+                            <a href="#contact">contact form</a> and we'll get
+                            back to you.
+                        </p>
+                    </div>
 
-        <div class="section-head reveal">
-          <h2 id="faq-title">Frequently asked questions</h2>
-          <p>
-            Don't see your question? Send it through the
-            <a href="#contact">contact form</a> and we'll get back to you.
-          </p>
-        </div>
+                    <div class="faq-list reveal">
+                        <details class="faq-item">
+                            <summary>
+                                What services does Davenport Books offer?
+                            </summary>
+                            <p>
+                                We offer publishing and book services (KDP
+                                publishing assistance, book formatting, book
+                                cover design, Amazon book optimization, and
+                                Goodreads optimization) and marketing services
+                                (ads management, social media marketing, author
+                                email marketing, and book launch campaign
+                                management).
+                            </p>
+                        </details>
 
-        <div class="faq-list reveal">
+                        <details class="faq-item">
+                            <summary>
+                                Do you work with self-published authors?
+                            </summary>
+                            <p>
+                                Yes. Davenport Books is built for self-published
+                                authors and independent publishers who want
+                                professional support without managing every task
+                                themselves.
+                            </p>
+                        </details>
 
-          <details class="faq-item">
-            <summary>What services does Davenport Books offer?</summary>
-            <p>We offer publishing and book services (KDP publishing assistance, book formatting, book cover design, Amazon book optimization, and Goodreads optimization) and marketing services (ads management, social media marketing, author email marketing, and book launch campaign management).</p>
-          </details>
+                        <details class="faq-item">
+                            <summary>Can I hire only one service?</summary>
+                            <p>
+                                Yes. Every service can be requested on its own.
+                                Many authors start with one need, such as
+                                formatting or a cover, and add other services
+                                later.
+                            </p>
+                        </details>
 
-          <details class="faq-item">
-            <summary>Do you work with self-published authors?</summary>
-            <p>Yes. Davenport Books is built for self-published authors and independent publishers who want professional support without managing every task themselves.</p>
-          </details>
+                        <details class="faq-item">
+                            <summary>Can you help with Amazon KDP?</summary>
+                            <p>
+                                Yes. KDP Publishing Assistance covers preparing
+                                your book and listing details for Kindle Direct
+                                Publishing. We can also help improve your Amazon
+                                book page through Amazon Book Optimization.
+                            </p>
+                        </details>
 
-          <details class="faq-item">
-            <summary>Can I hire only one service?</summary>
-            <p>Yes. Every service can be requested on its own. Many authors start with one need, such as formatting or a cover, and add other services later.</p>
-          </details>
+                        <details class="faq-item">
+                            <summary>Can you help with book launches?</summary>
+                            <p>
+                                Yes. Book Launch Campaign Management helps
+                                coordinate the timeline, materials, and
+                                promotional activities around your release.
+                                Results depend on many factors, and we don't
+                                promise specific sales or reviews.
+                            </p>
+                        </details>
 
-          <details class="faq-item">
-            <summary>Can you help with Amazon KDP?</summary>
-            <p>Yes. KDP Publishing Assistance covers preparing your book and listing details for Kindle Direct Publishing. We can also help improve your Amazon book page through Amazon Book Optimization.</p>
-          </details>
+                        <details class="faq-item">
+                            <summary>Do you provide book cover design?</summary>
+                            <p>
+                                Yes. Book Cover Design is one of our publishing
+                                services. Tell us about your book, genre, and
+                                audience, and we'll discuss options with you.
+                            </p>
+                        </details>
 
-          <details class="faq-item">
-            <summary>Can you help with book launches?</summary>
-            <p>Yes. Book Launch Campaign Management helps coordinate the timeline, materials, and promotional activities around your release. Results depend on many factors, and we don't promise specific sales or reviews.</p>
-          </details>
+                        <details class="faq-item">
+                            <summary>How does the process work?</summary>
+                            <p>
+                                We follow four steps: Discover, Prepare, Launch,
+                                and Grow. First we learn about your book and
+                                goals, then we prepare your materials,
+                                coordinate the launch, and review how things are
+                                going so we can keep improving. See the
+                                <a href="#process">Process</a> section for
+                                details.
+                            </p>
+                        </details>
 
-          <details class="faq-item">
-            <summary>Do you provide book cover design?</summary>
-            <p>Yes. Book Cover Design is one of our publishing services. Tell us about your book, genre, and audience, and we'll discuss options with you.</p>
-          </details>
+                        <details class="faq-item">
+                            <summary>How can I get started?</summary>
+                            <p>
+                                Use the contact form below or email us directly.
+                                Tell us about your book, where you are in the
+                                process, and what kind of help you're looking
+                                for.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </section>
 
-          <details class="faq-item">
-            <summary>How does the process work?</summary>
-            <p>We follow four steps: Discover, Prepare, Launch, and Grow. First we learn about your book and goals, then we prepare your materials, coordinate the launch, and review how things are going so we can keep improving. See the <a href="#process">Process</a> section for details.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>How can I get started?</summary>
-            <p>Use the contact form below or email us directly. Tell us about your book, where you are in the process, and what kind of help you're looking for.</p>
-          </details>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- =====================================================================
+            <!-- =====================================================================
          10. CONTACT / WORK WITH US
          ===================================================================== -->
-    <section class="section section--tint" id="contact" aria-labelledby="contact-title">
-      <div class="container contact-grid">
+            <section
+                class="section section--tint"
+                id="contact"
+                aria-labelledby="contact-title"
+            >
+                <div class="container contact-grid">
+                    <div class="contact-copy reveal">
+                        <h2 id="contact-title">Work With Us</h2>
+                        <p>
+                            Tell us about your book and what you need help with.
+                            A few details are enough to get the conversation
+                            started.
+                        </p>
 
-        <div class="contact-copy reveal">
-          <h2 id="contact-title">Work With Us</h2>
-          <p>
-            Tell us about your book and what you need help with. A few details
-            are enough to get the conversation started.
-          </p>
+                        <p class="contact-email">
+                            <strong>Email:</strong>
+                            <a href="mailto:jeffrey.davenport.000@gmail.com"
+                                >jeffrey.davenport.000@gmail.com</a
+                            >
+                        </p>
 
-          <p class="contact-email">
-            <strong>Email:</strong>
-            <a href="mailto:jeffrey.davenport.000@gmail.com">jeffrey.davenport.000@gmail.com</a>
-          </p>
+                        <p class="contact-tips-title">
+                            Helpful things to include
+                        </p>
+                        <ul class="contact-tips">
+                            <li>Your book's title and genre</li>
+                            <li>Where you are in the process</li>
+                            <li>The services you're interested in</li>
+                            <li>Any target launch date</li>
+                        </ul>
+                    </div>
 
-          <p class="contact-tips-title">Helpful things to include</p>
-          <ul class="contact-tips">
-            <li>Your book's title and genre</li>
-            <li>Where you are in the process</li>
-            <li>The services you're interested in</li>
-            <li>Any target launch date</li>
-          </ul>
-        </div>
-
-        <form class="contact-form reveal" id="contact-form" action="#" method="post">
-
-<!-- Honeypot: real visitors never see or fill this field. Bots do.
+                    <form
+                        class="contact-form reveal"
+                        id="contact-form"
+                        action="#"
+                        method="post"
+                    >
+                        <!-- Honeypot: real visitors never see or fill this field. Bots do.
      Do not remove — it is the site's only spam protection. -->
-<div class="hp-field" aria-hidden="true">
-  <label for="cf-website">Website</label>
-  <input type="text" id="cf-website" name="website" tabindex="-1" autocomplete="off">
-</div>
+                        <div class="hp-field" aria-hidden="true">
+                            <label for="cf-website">Website</label>
+                            <input
+                                type="text"
+                                id="cf-website"
+                                name="website"
+                                tabindex="-1"
+                                autocomplete="off"
+                            />
+                        </div>
 
-          <div class="form-field">
-            <label for="cf-name">Name</label>
-            <input type="text" id="cf-name" name="name" autocomplete="name" required>
-          </div>
+                        <div class="form-field">
+                            <label for="cf-name">Name</label>
+                            <input
+                                type="text"
+                                id="cf-name"
+                                name="name"
+                                autocomplete="name"
+                                required
+                            />
+                        </div>
 
-          <div class="form-field">
-            <label for="cf-email">Email</label>
-            <input type="email" id="cf-email" name="email" autocomplete="email" required>
-          </div>
+                        <div class="form-field">
+                            <label for="cf-email">Email</label>
+                            <input
+                                type="email"
+                                id="cf-email"
+                                name="email"
+                                autocomplete="email"
+                                required
+                            />
+                        </div>
 
-          <!-- ================================================================
+                        <!-- ================================================================
                MULTI-SELECT SERVICE FIELD
                Checkbox values must match the data-service values on the
                service cards (section 3) so clicking a card ticks the box.
                ================================================================ -->
-          <div class="form-field">
-            <label id="cf-service-label" for="cf-service-trigger">What do you need help with?</label>
+                        <div class="form-field">
+                            <label
+                                id="cf-service-label"
+                                for="cf-service-trigger"
+                                >What do you need help with?</label
+                            >
 
-            <div class="multiselect" id="service-multiselect">
-              <button
-                type="button"
-                class="multiselect-trigger"
-                id="cf-service-trigger"
-                aria-haspopup="listbox"
-                aria-expanded="false"
-                aria-controls="cf-service-panel"
-              >
-                <span class="multiselect-value" id="cf-service-value">
-                  <span class="multiselect-placeholder">Choose services</span>
-                </span>
-                <svg
-                  class="multiselect-caret"
-                  viewBox="0 0 24 24"
-                  width="20"
-                  height="20"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <path d="m6 9 6 6 6-6" />
-                </svg>
-              </button>
+                            <div class="multiselect" id="service-multiselect">
+                                <button
+                                    type="button"
+                                    class="multiselect-trigger"
+                                    id="cf-service-trigger"
+                                    aria-haspopup="listbox"
+                                    aria-expanded="false"
+                                    aria-controls="cf-service-panel"
+                                >
+                                    <span
+                                        class="multiselect-value"
+                                        id="cf-service-value"
+                                    >
+                                        <span class="multiselect-placeholder"
+                                            >Choose services</span
+                                        >
+                                    </span>
+                                    <svg
+                                        class="multiselect-caret"
+                                        viewBox="0 0 24 24"
+                                        width="20"
+                                        height="20"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        aria-hidden="true"
+                                        focusable="false"
+                                    >
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </button>
 
-              <div
-                class="multiselect-panel"
-                id="cf-service-panel"
-                role="group"
-                aria-labelledby="cf-service-label"
-                hidden
-              >
-                <div class="multiselect-group">
-                  <p class="multiselect-group-label">Publishing &amp; Book Services</p>
+                                <div
+                                    class="multiselect-panel"
+                                    id="cf-service-panel"
+                                    role="group"
+                                    aria-labelledby="cf-service-label"
+                                    hidden
+                                >
+                                    <div class="multiselect-group">
+                                        <p class="multiselect-group-label">
+                                            Publishing &amp; Book Services
+                                        </p>
 
-                  <label class="multiselect-option">
-                    <input type="checkbox" name="service" value="KDP Publishing Assistance" />
-                    <span class="multiselect-check" aria-hidden="true"></span>
-                    <span>KDP Publishing Assistance</span>
-                  </label>
+                                        <label class="multiselect-option">
+                                            <input
+                                                type="checkbox"
+                                                name="service"
+                                                value="KDP Publishing Assistance"
+                                            />
+                                            <span
+                                                class="multiselect-check"
+                                                aria-hidden="true"
+                                            ></span>
+                                            <span
+                                                >KDP Publishing Assistance</span
+                                            >
+                                        </label>
 
-                  <label class="multiselect-option">
-                    <input type="checkbox" name="service" value="Book Formatting" />
-                    <span class="multiselect-check" aria-hidden="true"></span>
-                    <span>Book Formatting</span>
-                  </label>
+                                        <label class="multiselect-option">
+                                            <input
+                                                type="checkbox"
+                                                name="service"
+                                                value="Book Formatting"
+                                            />
+                                            <span
+                                                class="multiselect-check"
+                                                aria-hidden="true"
+                                            ></span>
+                                            <span>Book Formatting</span>
+                                        </label>
 
-                  <label class="multiselect-option">
-                    <input type="checkbox" name="service" value="Book Cover Design" />
-                    <span class="multiselect-check" aria-hidden="true"></span>
-                    <span>Book Cover Design</span>
-                  </label>
+                                        <label class="multiselect-option">
+                                            <input
+                                                type="checkbox"
+                                                name="service"
+                                                value="Book Cover Design"
+                                            />
+                                            <span
+                                                class="multiselect-check"
+                                                aria-hidden="true"
+                                            ></span>
+                                            <span>Book Cover Design</span>
+                                        </label>
 
-                  <label class="multiselect-option">
-                    <input type="checkbox" name="service" value="Amazon Book Optimization" />
-                    <span class="multiselect-check" aria-hidden="true"></span>
-                    <span>Amazon Book Optimization</span>
-                  </label>
+                                        <label class="multiselect-option">
+                                            <input
+                                                type="checkbox"
+                                                name="service"
+                                                value="Amazon Book Optimization"
+                                            />
+                                            <span
+                                                class="multiselect-check"
+                                                aria-hidden="true"
+                                            ></span>
+                                            <span
+                                                >Amazon Book Optimization</span
+                                            >
+                                        </label>
 
-                  <label class="multiselect-option">
-                    <input type="checkbox" name="service" value="Goodreads Optimization" />
-                    <span class="multiselect-check" aria-hidden="true"></span>
-                    <span>Goodreads Optimization</span>
-                  </label>
+                                        <label class="multiselect-option">
+                                            <input
+                                                type="checkbox"
+                                                name="service"
+                                                value="Goodreads Optimization"
+                                            />
+                                            <span
+                                                class="multiselect-check"
+                                                aria-hidden="true"
+                                            ></span>
+                                            <span>Goodreads Optimization</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="multiselect-group">
+                                        <p class="multiselect-group-label">
+                                            Marketing &amp; Growth
+                                        </p>
+
+                                        <label class="multiselect-option">
+                                            <input
+                                                type="checkbox"
+                                                name="service"
+                                                value="Ads Management"
+                                            />
+                                            <span
+                                                class="multiselect-check"
+                                                aria-hidden="true"
+                                            ></span>
+                                            <span>Ads Management</span>
+                                        </label>
+
+                                        <label class="multiselect-option">
+                                            <input
+                                                type="checkbox"
+                                                name="service"
+                                                value="Social Media Marketing"
+                                            />
+                                            <span
+                                                class="multiselect-check"
+                                                aria-hidden="true"
+                                            ></span>
+                                            <span>Social Media Marketing</span>
+                                        </label>
+
+                                        <label class="multiselect-option">
+                                            <input
+                                                type="checkbox"
+                                                name="service"
+                                                value="Author Email Marketing"
+                                            />
+                                            <span
+                                                class="multiselect-check"
+                                                aria-hidden="true"
+                                            ></span>
+                                            <span>Author Email Marketing</span>
+                                        </label>
+
+                                        <label class="multiselect-option">
+                                            <input
+                                                type="checkbox"
+                                                name="service"
+                                                value="Book Launch Campaign Management"
+                                            />
+                                            <span
+                                                class="multiselect-check"
+                                                aria-hidden="true"
+                                            ></span>
+                                            <span
+                                                >Book Launch Campaign
+                                                Management</span
+                                            >
+                                        </label>
+                                    </div>
+
+                                    <div class="multiselect-group">
+                                        <p class="multiselect-group-label">
+                                            Other
+                                        </p>
+
+                                        <label class="multiselect-option">
+                                            <input
+                                                type="checkbox"
+                                                name="service"
+                                                value="Publishing and marketing together"
+                                            />
+                                            <span
+                                                class="multiselect-check"
+                                                aria-hidden="true"
+                                            ></span>
+                                            <span
+                                                >Publishing and marketing
+                                                together</span
+                                            >
+                                        </label>
+
+                                        <label class="multiselect-option">
+                                            <input
+                                                type="checkbox"
+                                                name="service"
+                                                value="Not sure yet"
+                                            />
+                                            <span
+                                                class="multiselect-check"
+                                                aria-hidden="true"
+                                            ></span>
+                                            <span>Not sure yet</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="cf-message">Message</label>
+                            <textarea
+                                id="cf-message"
+                                name="message"
+                                rows="5"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button
+                            class="btn btn-primary form-submit"
+                            type="submit"
+                        >
+                            Send message
+                        </button>
+
+                        <p
+                            class="form-status"
+                            id="form-status"
+                            role="status"
+                            aria-live="polite"
+                        ></p>
+                    </form>
                 </div>
+            </section>
+        </main>
 
-                <div class="multiselect-group">
-                  <p class="multiselect-group-label">Marketing &amp; Growth</p>
-
-                  <label class="multiselect-option">
-                    <input type="checkbox" name="service" value="Ads Management" />
-                    <span class="multiselect-check" aria-hidden="true"></span>
-                    <span>Ads Management</span>
-                  </label>
-
-                  <label class="multiselect-option">
-                    <input type="checkbox" name="service" value="Social Media Marketing" />
-                    <span class="multiselect-check" aria-hidden="true"></span>
-                    <span>Social Media Marketing</span>
-                  </label>
-
-                  <label class="multiselect-option">
-                    <input type="checkbox" name="service" value="Author Email Marketing" />
-                    <span class="multiselect-check" aria-hidden="true"></span>
-                    <span>Author Email Marketing</span>
-                  </label>
-
-                  <label class="multiselect-option">
-                    <input type="checkbox" name="service" value="Book Launch Campaign Management" />
-                    <span class="multiselect-check" aria-hidden="true"></span>
-                    <span>Book Launch Campaign Management</span>
-                  </label>
-                </div>
-
-                <div class="multiselect-group">
-                  <p class="multiselect-group-label">Other</p>
-
-                  <label class="multiselect-option">
-                    <input type="checkbox" name="service" value="Publishing and marketing together" />
-                    <span class="multiselect-check" aria-hidden="true"></span>
-                    <span>Publishing and marketing together</span>
-                  </label>
-
-                  <label class="multiselect-option">
-                    <input type="checkbox" name="service" value="Not sure yet" />
-                    <span class="multiselect-check" aria-hidden="true"></span>
-                    <span>Not sure yet</span>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="form-field">
-            <label for="cf-message">Message</label>
-            <textarea id="cf-message" name="message" rows="5" required></textarea>
-          </div>
-
-          <button class="btn btn-primary form-submit" type="submit">Send message</button>
-
-          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-        </form>
-
-      </div>
-    </section>
-
-  </main>
-
-
-  <!-- =====================================================================
+        <!-- =====================================================================
        11. FOOTER
        ===================================================================== -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-
-      <div class="footer-brand">
-        <!-- OFFICIAL LOGO (same file as the header).
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="footer-brand">
+                    <!-- OFFICIAL LOGO (same file as the header).
              If your file is named differently, change the src here too. -->
-        <img src="assets/logos/davenport-books-logo.svg"
-             alt="Davenport Books"
-             class="footer-logo">
-        <p class="footer-tagline"><em>A Davenport Labs company.</em></p>
+                    <img
+                        src="assets/logos/davenport-books-logo.svg"
+                        alt="Davenport Books"
+                        class="footer-logo"
+                    />
+                    <p class="footer-tagline">
+                        <em>A Davenport Labs company.</em>
+                    </p>
 
-        <!-- SOCIAL LINKS: add yours when they exist. Example:
+                    <!-- SOCIAL LINKS: add yours when they exist. Example:
         <ul class="footer-social">
           <li><a href="https://example.com/your-page">Instagram</a></li>
         </ul>
         -->
-      </div>
-      
-<!-- =====================================================================
+                </div>
+
+                <!-- =====================================================================
      NEWSLETTER SIGNUP
      Form behavior is controlled by NEWSLETTER_CONFIG at the top of
      js/script.js — same pattern as the contact form.
      ===================================================================== -->
-<div class="footer-newsletter">
-  <p class="footer-newsletter-title">Publishing tips for authors</p>
-  <p class="footer-newsletter-text">Occasional, practical notes. No spam.</p>
-  <form class="newsletter-form" id="newsletter-form" action="#" method="post" novalidate>
-  
-  <div class="hp-field" aria-hidden="true">
-  <label for="nl-website">Website</label>
-  <input type="text" id="nl-website" name="website" tabindex="-1" autocomplete="off">
-</div>
-  
-    <input
-      type="email"
-      id="nl-email"
-      name="email"
-      placeholder="Your email address"
-      aria-label="Email address"
-      autocomplete="email"
-      required
-    >
-    <button type="submit" class="btn btn-primary">Subscribe</button>
-  </form>
-  <p class="form-status" id="newsletter-status" role="status" aria-live="polite"></p>
-</div>
+                <div class="footer-newsletter">
+                    <p class="footer-newsletter-title">
+                        Publishing tips for authors
+                    </p>
+                    <p class="footer-newsletter-text">
+                        Occasional, practical notes. No spam.
+                    </p>
+                    <form
+                        class="newsletter-form"
+                        id="newsletter-form"
+                        action="#"
+                        method="post"
+                        novalidate
+                    >
+                        <div class="hp-field" aria-hidden="true">
+                            <label for="nl-website">Website</label>
+                            <input
+                                type="text"
+                                id="nl-website"
+                                name="website"
+                                tabindex="-1"
+                                autocomplete="off"
+                            />
+                        </div>
 
-      <nav class="footer-nav" aria-label="Footer">
-  <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#services">Services</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#team">Team</a></li>
-  <li><a href="#process">Process</a></li>
-  <li><a href="#faq">FAQ</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
-<ul>
-  <li><a href="privacy-policy.html">Privacy Policy</a></li>
-  <li><a href="terms.html">Terms of Service</a></li>
-</ul>
-      </nav>
+                        <input
+                            type="email"
+                            id="nl-email"
+                            name="email"
+                            placeholder="Your email address"
+                            aria-label="Email address"
+                            autocomplete="email"
+                            required
+                        />
+                        <button type="submit" class="btn btn-primary">
+                            Subscribe
+                        </button>
+                    </form>
+                    <p
+                        class="form-status"
+                        id="newsletter-status"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+                </div>
 
-    </div>
+                <nav class="footer-nav" aria-label="Footer">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-    <div class="container footer-legal">
-      <p>&copy; <span id="year">2026</span> Davenport Books. All rights reserved.</p>
-    </div>
-  </footer>
+            <div class="container footer-legal">
+                <p>
+                    &copy; <span id="year">2026</span> Davenport Books. All
+                    rights reserved.
+                </p>
+            </div>
+        </footer>
 
-  <script src="js/script.js"></script>
-</body>
+        <script src="js/script.js"></script>
+    </body>
 </html>
